@@ -25,7 +25,6 @@ public class AuthorizeTest {
         RestAssured.baseURI = "https://api.go.staging.kvint.io/";
     }
 
-//Позитивный тест
     @Test
     void successAuth() {
         var resp = step("Отправить POST запрос на авторизацию c корректным логином и паролем",  () -> {
@@ -51,7 +50,6 @@ public class AuthorizeTest {
         });
     }
 
-//Негативные тесты
     @Test
     void emptyLogin() {
         var resp = step("Отправить POST запрос на авторизацию без логина и пароля",  () -> {

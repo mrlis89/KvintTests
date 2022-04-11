@@ -19,7 +19,7 @@ import static requests.Requests.userAuthURI;
 import static requests.Requests.userRefreshURI;
 
 @Story("API тесты")
-@Feature("auth/refresh")
+@Feature("Authorization/refreshToken")
 public class RefreshTest {
 
     @BeforeAll
